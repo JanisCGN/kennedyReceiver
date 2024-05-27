@@ -1,0 +1,279 @@
+{
+    "devices": [
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                303.83333333333326,
+                316.6666666666667
+            ],
+            "name": null,
+            "uuid": "b4049e29-d100-40a8-8254-54fa310c8312",
+            "values": {
+                "value": 10.0
+            }
+        },
+        {
+            "device": "quasi.devices.sources.ideal_coherent_source.IdealCoherentSource",
+            "location": [
+                477.16666666666697,
+                296.3333333333332
+            ],
+            "name": null,
+            "uuid": "b22d3e55-3625-49d6-9c31-0f5f68589540"
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                328.50000000000017,
+                369.99999999999994
+            ],
+            "name": null,
+            "uuid": "88ccd31d-e09b-4513-88a9-617738967604",
+            "values": {
+                "value": 10.0
+            }
+        },
+        {
+            "device": "quasi.devices.phase_shifters.ideal_phase_shifter.IdealPhaseShifter",
+            "location": [
+                658.4999999999998,
+                287.99999999999966
+            ],
+            "name": null,
+            "uuid": "d7767c0a-7c82-4848-9f51-e258122c0098"
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                528.5000000000007,
+                149.33333333333323
+            ],
+            "name": null,
+            "uuid": "10aee5ba-00a2-4eaa-8039-bbfcb25f350e",
+            "values": {
+                "value": 10.0
+            }
+        },
+        {
+            "device": "quasi.devices.fiber.ideal_fiber.IdealFiber",
+            "location": [
+                833.1666666666671,
+                280.33333333333314
+            ],
+            "name": null,
+            "uuid": "243e5272-08ed-4a9e-8d91-b9f703f570c4"
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                723.8333333333333,
+                156.6666666666667
+            ],
+            "name": null,
+            "uuid": "4ba1924f-4456-4b5a-9b48-0bab5986699d",
+            "values": {
+                "value": 10.0
+            }
+        },
+        {
+            "device": "quasi.devices.detectors.ideal_detector.IdealDetector",
+            "location": [
+                977.833333333333,
+                281.3333333333333
+            ],
+            "name": null,
+            "uuid": "4eec8e5f-2583-4a48-92b0-8a6afc288ea1"
+        },
+        {
+            "device": "quasi.devices.control.clock_trigger.ClockTrigger",
+            "location": [
+                381.8333333333334,
+                199.33333333333331
+            ],
+            "name": null,
+            "uuid": "5ccd2b00-5b0c-4f49-ad19-e23010e6471b"
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                240.49999999999994,
+                256.6666666666668
+            ],
+            "name": null,
+            "uuid": "ba38f0f1-a95b-4034-8b1c-e9349f7fe619",
+            "values": {
+                "value": 3.0
+            }
+        },
+        {
+            "device": "quasi.devices.variables.int_variable.IntVariable",
+            "location": [
+                261.8333333333332,
+                121.00000000000009
+            ],
+            "name": null,
+            "uuid": "3480428f-7776-414e-8688-10151ede04c5",
+            "values": {
+                "value": 1
+            }
+        },
+        {
+            "device": "quasi.devices.variables.time_variable.TimeVariable",
+            "location": [
+                249.1666666666664,
+                183.99999999999983
+            ],
+            "name": null,
+            "uuid": "8196f4da-1043-48d4-832f-42e25f65c9c7",
+            "values": {
+                "value": null,
+                "time": 2.0
+            }
+        }
+    ],
+    "connections": [
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "b4049e29-d100-40a8-8254-54fa310c8312",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "b22d3e55-3625-49d6-9c31-0f5f68589540",
+                    "port": "alpha"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "88ccd31d-e09b-4513-88a9-617738967604",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "b22d3e55-3625-49d6-9c31-0f5f68589540",
+                    "port": "phi"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_quantum_signal.GenericQuantumSignal",
+            "conn": [
+                {
+                    "device_uuid": "b22d3e55-3625-49d6-9c31-0f5f68589540",
+                    "port": "output"
+                },
+                {
+                    "device_uuid": "d7767c0a-7c82-4848-9f51-e258122c0098",
+                    "port": "input"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "10aee5ba-00a2-4eaa-8039-bbfcb25f350e",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "d7767c0a-7c82-4848-9f51-e258122c0098",
+                    "port": "theta"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_quantum_signal.GenericQuantumSignal",
+            "conn": [
+                {
+                    "device_uuid": "d7767c0a-7c82-4848-9f51-e258122c0098",
+                    "port": "output"
+                },
+                {
+                    "device_uuid": "243e5272-08ed-4a9e-8d91-b9f703f570c4",
+                    "port": "input"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "4ba1924f-4456-4b5a-9b48-0bab5986699d",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "243e5272-08ed-4a9e-8d91-b9f703f570c4",
+                    "port": "length"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_quantum_signal.GenericQuantumSignal",
+            "conn": [
+                {
+                    "device_uuid": "243e5272-08ed-4a9e-8d91-b9f703f570c4",
+                    "port": "output"
+                },
+                {
+                    "device_uuid": "4eec8e5f-2583-4a48-92b0-8a6afc288ea1",
+                    "port": "input"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_bool_signal.GenericBoolSignal",
+            "conn": [
+                {
+                    "device_uuid": "5ccd2b00-5b0c-4f49-ad19-e23010e6471b",
+                    "port": "trigger"
+                },
+                {
+                    "device_uuid": "b22d3e55-3625-49d6-9c31-0f5f68589540",
+                    "port": "trigger"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "ba38f0f1-a95b-4034-8b1c-e9349f7fe619",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "5ccd2b00-5b0c-4f49-ad19-e23010e6471b",
+                    "port": "frequency"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_int_signal.GenericIntSignal",
+            "conn": [
+                {
+                    "device_uuid": "3480428f-7776-414e-8688-10151ede04c5",
+                    "port": "int"
+                },
+                {
+                    "device_uuid": "5ccd2b00-5b0c-4f49-ad19-e23010e6471b",
+                    "port": "pulse_num"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_time_signal.GenericTimeSignal",
+            "conn": [
+                {
+                    "device_uuid": "8196f4da-1043-48d4-832f-42e25f65c9c7",
+                    "port": "time"
+                },
+                {
+                    "device_uuid": "5ccd2b00-5b0c-4f49-ad19-e23010e6471b",
+                    "port": "delay"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,181 @@
+{
+    "devices": [
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                411.83333333333286,
+                245.33333333333337
+            ],
+            "name": null,
+            "uuid": "d7acb141-f796-4d76-a22e-b5157721c0c0",
+            "values": {
+                "value": null
+            }
+        },
+        {
+            "device": "quasi.devices.sources.ideal_coherent_source.IdealCoherentSource",
+            "location": [
+                372.5,
+                340.33333333333354
+            ],
+            "name": null,
+            "uuid": "ad0fefb2-78d8-497d-8695-0435218e5b03"
+        },
+        {
+            "device": "quasi.devices.phase_shifters.ideal_phase_shifter.IdealPhaseShifter",
+            "location": [
+                527.1666666666663,
+                330.66666666666697
+            ],
+            "name": null,
+            "uuid": "c02902cb-9a9e-4574-aceb-d67c92f78193"
+        },
+        {
+            "device": "quasi.devices.fiber.ideal_fiber.IdealFiber",
+            "location": [
+                719.833333333334,
+                323.0000000000001
+            ],
+            "name": null,
+            "uuid": "3d669991-1b74-48f3-ad3f-aa3456258426"
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                589.1666666666671,
+                242.66666666666669
+            ],
+            "name": null,
+            "uuid": "cc112111-6fbb-4f71-826c-18537ade471f",
+            "values": {
+                "value": null
+            }
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                249.83333333333337,
+                335.9999999999999
+            ],
+            "name": null,
+            "uuid": "aae9c733-d451-4a3b-9a1c-34f586da102a",
+            "values": {
+                "value": null
+            }
+        },
+        {
+            "device": "quasi.devices.variables.float_variable.FloatVariable",
+            "location": [
+                255.16666666666674,
+                409.9999999999995
+            ],
+            "name": null,
+            "uuid": "6833c2c3-135e-4a0d-8d87-d9466797ba26",
+            "values": {
+                "value": null
+            }
+        },
+        {
+            "device": "quasi.devices.control.simple_trigger.SimpleTrigger",
+            "location": [
+                275.8333333333328,
+                268.33333333333326
+            ],
+            "name": null,
+            "uuid": "7a9ce61a-27b6-449b-b6d5-4189bfc4fbf2"
+        }
+    ],
+    "connections": [
+        {
+            "signal": "quasi.signals.generic_quantum_signal.GenericQuantumSignal",
+            "conn": [
+                {
+                    "device_uuid": "ad0fefb2-78d8-497d-8695-0435218e5b03",
+                    "port": "output"
+                },
+                {
+                    "device_uuid": "c02902cb-9a9e-4574-aceb-d67c92f78193",
+                    "port": "input"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "d7acb141-f796-4d76-a22e-b5157721c0c0",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "c02902cb-9a9e-4574-aceb-d67c92f78193",
+                    "port": "theta"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "cc112111-6fbb-4f71-826c-18537ade471f",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "3d669991-1b74-48f3-ad3f-aa3456258426",
+                    "port": "length"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_bool_signal.GenericBoolSignal",
+            "conn": [
+                {
+                    "device_uuid": "7a9ce61a-27b6-449b-b6d5-4189bfc4fbf2",
+                    "port": "trigger"
+                },
+                {
+                    "device_uuid": "ad0fefb2-78d8-497d-8695-0435218e5b03",
+                    "port": "trigger"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "aae9c733-d451-4a3b-9a1c-34f586da102a",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "ad0fefb2-78d8-497d-8695-0435218e5b03",
+                    "port": "alpha"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_float_signal.GenericFloatSignal",
+            "conn": [
+                {
+                    "device_uuid": "6833c2c3-135e-4a0d-8d87-d9466797ba26",
+                    "port": "float"
+                },
+                {
+                    "device_uuid": "ad0fefb2-78d8-497d-8695-0435218e5b03",
+                    "port": "phi"
+                }
+            ]
+        },
+        {
+            "signal": "quasi.signals.generic_quantum_signal.GenericQuantumSignal",
+            "conn": [
+                {
+                    "device_uuid": "c02902cb-9a9e-4574-aceb-d67c92f78193",
+                    "port": "output"
+                },
+                {
+                    "device_uuid": "3d669991-1b74-48f3-ad3f-aa3456258426",
+                    "port": "input"
+                }
+            ]
+        }
+    ]
+}
